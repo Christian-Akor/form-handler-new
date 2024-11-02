@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- main body container -->
+  <div class="main-container">
+    <!-- header -->
+    <header>
+      <h1>
+        Protect Your Little One With Our Top-Rated Baby Head Protector :
+        Safety And Style Combined!
+      </h1>
+      <h2>
+        <span class="star">★ ★ ★ ★ ★ </span><br />
+        Recommended By 98% Moms
+      </h2>
+    </header>
+
+    <!-- main -->
+    <main style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        ">
+      <section>
+        <div class="top-body-container">
+          <img src="./Assets/WhatsApp Image 2024-10-22 at 15.26.49_a6c63400.jpg" style="width: 75%" />
+          <h3 style="text-align: center; display: flex; justify-content: center;align-items: center;">
+            <img src="./svg/check-circle-svgrepo-com (2).svg" />
+            Your little one is safe from accidental bumps and falls
+          </h3>
+        </div>
+
+        <div class="second-top-container">
+          <div>
+            <img src="./Assets/WhatsApp Image 2024-10-20 at 15.58.37_8b3ed779.jpg" />
+            <p>
+              <img src="./svg/check-circle-svgrepo-com (1).svg" />You're
+              worry-free while your baby explores
+            </p>
+          </div>
+          <div style="flex-direction: row-reverse">
+            <img src="./Assets/WhatsApp Image 2024-10-20 at 15.58.39_57349fa4.jpg" />
+            <p>
+              <img src="./svg/check-circle-svgrepo-com (2).svg" /> Adjustable
+              straps provide sizing options
+            </p>
+          </div>
+          <div>
+            <img src="./Assets/WhatsApp Image 2024-10-20 at 15.58.38_27526ecf.jpg" />
+            <p>
+              <img src="./svg/check-circle-svgrepo-com (1).svg" /> Made of
+              light and breathable material
+            </p>
+          </div>
+          <div class="down-image" style="flex-direction: column">
+            <img src="./Assets/WhatsApp Image 2024-10-20 at 15.58.40_671c160d.jpg" />
+            <p>
+              <img src="./svg/check-circle-svgrepo-com (2).svg" />Healthy mesh
+              and Comfortable
+            </p>
+          </div>
+          <p style="color: rgb(216, 93, 165); text-align: center">
+            PLACE ORDER NOW AND CLAIM THE FREE GIFT WORTH NGN3,000
+          </p>
+          <p style="color: blueviolet; font-family: sans-serif">
+            Mini 3D Fun Projector <span style="color: red">❤</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="free-gift-section">
+        <img src="./Assets/WhatsApp Image 2024-10-20 at 16.00.05_030ff27a.jpg" class="img-1" />
+        <img src="./Assets/WhatsApp Image 2024-10-20 at 16.00.05_32a8d508.jpg" />
+        <img src="./Assets/WhatsApp Image 2024-10-20 at 16.00.06_73d09b69.jpg" />
+        <img src="./Assets/WhatsApp Image 2024-10-20 at 16.00.06_2607663d.jpg" />
+        <img src="./Assets/WhatsApp Image 2024-10-20 at 16.00.06_e5ea87f3.jpg" class="img-2" />
+      </section>
+
+      <section class="comment-section">
+        <h3 style="text-align: center">
+          Check out what other Parents said about this...
+        </h3>
+        <div>
+          <img src="./Assets/Untitled 1.png" />
+          <img src="./Assets/Untitled 2.png" />
+          <img src="./Assets/Untitled.png" />
+        </div>
+      </section>
+
+      <section class="delivery">
+        <div class="delivery-box">
+          <h3>
+            Delivery Is Free (payment on delivery)
+          </h3>
+        </div>
+        <h3 style="text-align: center">
+          You can always reach Mercy via whatsApp 08116733959
+        </h3>
+      </section>
+
+      <section class="text-box" style="
+            width: 80%;
+            border: solid;
+            padding: 4%;
+            border-radius: 40px;
+            background: #ccc;
+          ">
+        <h3 style="font-family: sans-serif; text-align: center">
+          CLICK THE 'SHOP NOW' BUTTON BELOW TO PLACE ORDER
+        </h3>
+        <h4 style="text-align: center">
+          Fill the form on the popup page and once you submit the order form, a member of our team will reach out
+          to you and handle the delivery process
+        </h4>
+        <h3 style="font-family: sans-serif; text-align: center">
+          <span style="color: red">NOTE:</span> Make sure you’re fully
+          prepared for the product and have the payment ready before delivery
+        </h3>
+        <h3 style="font-family: sans-serif; text-align: center">
+          PLEASE DO NOT PLACE AN ORDER IF YOU’RE NOT AVAILABLE TO RECEIVE YOUR
+          ORDER WITHIN 24 TO 48 HOURS
+        </h3>
+      </section>
+
+      <section class="product" style="
+            text-align: center;
+            border-radius: 60px;
+            padding: 1%;
+            margin: 1%;
+            background: pink;
+          ">
+        <h4>
+          BABY HEAD PROTECTOR <br />+<br />
+          FREE GIFT( MINI 3D PROJECTOR )<br />
+          +<br />
+          FREE DELIVERY<br />
+          NGN15,000
+        </h4>
+      </section>
+
+      <section class="button">
+        <button class="shop-btn" onclick="openPopup()"
+          style="background-color: rgb(18, 153, 18); color: white; border-radius: 7px; padding: 5%; font-size: large;">Shop
+          Now</button>
+      </section>
+
+      <!-- Popup Form -->
+      <section id="overlay"></section>
+      <section class="popup" id="popupForm">
+        <form id="requestForm" name="contact" method="POST" data-netlify="true" action="/" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden>
+            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+          </p>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="given-name"/><br />
+          <label for="quantity">Quantity:</label><br />
+          <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required  autocomplete="off" />
+          <label for="phoneNumber">Phone Number:</label><br />
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your contact" required autocomplete="tel"/><br />
+          <label for="address">Address:</label><br />
+          <input type="text" id="address" name="address" placeholder="Enter your address" required autocomplete="shipping street-address"/><br />
+          <br />
+          <input type="submit" value="Place Order" style="background: green; color: white;" />
+        </form>
+
+        <div style="display: none; color: green; text-align: center" class="success-message" id="successMessage">
+          Thank you! Your request has been submitted.
+        </div>
+        <div style="display: none; color: red; text-align: center" class="error-message" id="errorMessage">
+          Oops! Something went wrong. Please try again.
+        </div>
+      </section>
+    </main>
+    <div class="buttom">
+      <footer> Developed by<span style="margin-left: 7px;"><a href="http://linkedin.com/in/onoja-christian-akor"> Onoja
+            Christian Akor</a></span></footer>
+    </div>
+  </div>
+  <script src="./scrip.js"></script>
+</body>
+
+</html>
